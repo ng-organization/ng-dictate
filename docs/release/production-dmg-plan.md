@@ -71,7 +71,7 @@ chmod -R go-rwx local-release-materials
 Verification:
 
 ```bash
-git status --ignored -sb -- local-release-materials .gitignore CONTEXT.md docs/release/production-dmg-plan.md
+git status --ignored -sb -- local-release-materials .gitignore GLOSSARY.md docs/release/production-dmg-plan.md
 ```
 
 Expected result: `local-release-materials/` appears ignored, not staged or tracked.
@@ -196,7 +196,7 @@ cargo check
 Commit only public repository changes:
 
 - `.gitignore`
-- `CONTEXT.md`
+- `GLOSSARY.md`
 - `docs/release/production-dmg-plan.md`
 - `src-tauri/tauri.conf.json`, if updater public key changes
 - Brand asset changes, when ready
